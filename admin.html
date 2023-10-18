@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Screen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .admin-container {
+            width: 300px;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .admin-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn.add-team {
+            background-color: #f67280;
+        }
+
+        .btn.play {
+            background-color: #6a89cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Screen</h1>
+        <a href="add-team.html" class="btn add-team">Add Team →</a>
+        <a href="play.html" class="btn play">Play →</a>
+    </div>
+</body>
+</html>
