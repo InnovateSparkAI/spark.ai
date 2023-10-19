@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles3.css">
+    <title>Innovation Funnel</title>
+    <style>
+.table {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0; 
+    margin: 30px 0; /* Added more padding around the table */
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 2px solid #000; /* Thicker border */
+    padding: 50px 30px; /* Increased padding for cells */
+    text-align: center;
+    vertical-align: top; 
+    border-radius: 10px; /* Added rounded corners */
+}
+
+.header {
+    background-color: #E0E0E0;
+    font-weight: bold;
+    font-size: 1.5em; /* Larger font for header */
+    text-transform: uppercase; /* Capitalized letters for header */
+    letter-spacing: 1px; /* Spaced out letters for a more modern look */
+}
+
+.pink-bg {
+    background-color: #B0E0E6; /* Replaced light pink with light blue */
+}
+
+.project {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 80px; 
+    height: 80px;
+    line-height: 80px;
+    margin: 20px auto;
+}
+
+.description {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px; 
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="table">
+        <!-- Header Row -->
+        <div class="row header">
+            <div class="cell">Opportunity Explorations Stage</div>
+            <div class="cell">Problem Fit stage</div>
+            <div class="cell">Solution Fit stage</div>
+            <div class="cell">Product Market Fit stage</div>
+            <div class="cell">Scale Up stage</div>
+        </div>
+
+        <!-- Continuous Improvement Row -->
+        <div class="row pink-bg">
+            <div class="cell description">Continuous Improvement...</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"><div class="project">PROJECT</div></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Incremental projects Row -->
+        <div class="row">
+            <div class="cell description">Incremental projects...</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"><div class="project">PROJECT</div></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Radical/Disruptive Projects Row -->
+        <div class="row pink-bg">
+            <div class="cell description">Radical/Disruptive Projects...</div>
+            <div class="cell"></div>
+            <div class="cell"><div class="project">PROJECT</div></div>
+            <div class="cell"></div>
+                       <div class="cell"></div>
+        </div>
+    </div>
+</body>
+</html>
+
