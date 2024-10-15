@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark.ai Innovation Funnel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spark.ai</h1>
+            <div class="settings-icon">⚙️ AD</div>
+        </header>
+        <nav>
+            <button class="nav-button active">
+                <span class="icon">☰</span>
+                Innovation Funnel
+            </button>
+            <button class="nav-button">
+                <span class="icon">▶️</span>
+                Re-Play
+            </button>
+            <button class="nav-button">
+                <span class="icon">➕</span>
+                Add Team
+            </button>
+        </nav>
+        <main>
+            <div class="funnel-stage">
+                <h3>Opportunity Explorations Stage</h3>
+                <div class="funnel-row">
+                    <div class="funnel-cell pink">
+                        <p>Continuous Improvement</p>
+                    </div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell pink">
+                        <p>Incremental projects</p>
+                    </div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell pink">
+                        <p>Radical/Disruptive Projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="funnel-stage">
+                <h3>Problem Fit Stage</h3>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+            </div>
+            <div class="funnel-stage">
+                <h3>Solution Fit Stage</h3>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow">
+                        <div class="project-tag" id="projectTrigger">
+                            <span class="dot"></span>
+                            1009
+                            <span class="tag-text">Batteries as a service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+            </div>
+            <div class="funnel-stage">
+                <h3>Product Market Fit Stage</h3>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+            </div>
+            <div class="funnel-stage">
+                <h3>Scale Up Stage</h3>
+		<div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+                <div class="funnel-row">
+                    <div class="funnel-cell yellow"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="project-card" id="projectCard">
+        <h4>Project</h4>
+        <p>Project details goes here</p>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const projectTrigger = document.getElementById('projectTrigger');
+        const projectCard = document.getElementById('projectCard');
+
+        projectTrigger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            projectCard.style.display = 'block';
+            projectCard.style.left = e.pageX + 'px';
+            projectCard.style.top = e.pageY + 'px';
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target !== projectCard && !projectCard.contains(e.target)) {
+                projectCard.style.display = 'none';
+            }
+        });
+    });
+    </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const projectTrigger = document.getElementById('projectTrigger');
+    const projectCard = document.createElement('div');
+    projectCard.className = 'project-card';
+    projectCard.innerHTML = '<h4>Project</h4><p>Project details goes here</p>';
+    document.body.appendChild(projectCard);
+
+    projectTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        projectCard.style.display = 'block';
+        projectCard.style.left = e.pageX + 'px';
+        projectCard.style.top = e.pageY + 'px';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (e.target !== projectCard && !projectCard.contains(e.target)) {
+            projectCard.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

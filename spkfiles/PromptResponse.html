@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Response</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .response-container {
+            width: 400px;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .response-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .toggle {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+            outline: none;
+            height: 100px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f67280;
+            color: #fff;
+            margin: 10px 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="response-container">
+        <h1>Prompt Response</h1>
+        <div class="toggle">
+            <span>Team : One Trust</span>
+            <button>next ></button>
+        </div>
+        <div class="toggle">
+            <span>Project : Build Asian Netflix</span>
+            <button>next ></button>
+        </div>
+        <textarea placeholder="Prompt"></textarea>
+        <label for="optimistic">Optimistic</label>
+        <input type="range" id="optimistic" min="1" max="100" value="50">
+        <button class="btn">Get Response</button>
+        <textarea placeholder="Response"></textarea>
+        <button class="btn">Send Response</button>
+    </div>
+</body>
+</html>

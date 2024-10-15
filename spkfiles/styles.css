@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+h1 {
+    color: #007bff;
+    margin: 0;
+}
+
+.settings-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.nav-button.active {
+    font-weight: bold;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.funnel-stage {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.funnel-stage h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.funnel-row {
+    margin-bottom: 10px;
+}
+
+.funnel-cell {
+    background-color: #fff9c4;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.funnel-cell.pink {
+    background-color: #fce4ec;
+}
+
+.funnel-cell p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.project-card {
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.project-tag {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 15px;
+    padding: 2px 8px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.tag-text {
+    margin-left: 5px;
+}
+
+.project-tag {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.tag-text {
+    margin-left: 5px;
+}
+
+.project-card {
+    display: none;
+    position: absolute;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.project-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 12px;
+}
